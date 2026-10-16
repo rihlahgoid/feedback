@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Feedback RihlahGo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Feedback RihlahGo">
+<meta name="theme-color" content="#124830">
+<meta name="robots" content="noindex">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--bg:#f3f1e8;--card:#fffdf8;--tx:#1b2a23;--mut:#66756d;--br:#e0dccb;--pri:#124830;--on:#fff;--soft:#e1efe7;--gold:#e8b114;--gold2:#fbf0cc;--red:#a8372c;--ok:#1f8a5f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1814;--card:#16231e;--tx:#e9efe9;--mut:#9baba3;--br:#2b3b34;--pri:#47b88b;--on:#08170f;--soft:#1a3329;--gold2:#34290d;--red:#f4877d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:640px;margin:0 auto;padding:12px 14px 40px}
+.brand{display:inline-block;background:#fff;border-radius:10px;padding:4px 10px;margin-bottom:10px}.brand img{height:30px;width:auto;display:block}
+.hero{background:linear-gradient(135deg,#0d3624,#1c6847);color:#fff;border-radius:16px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-30px;top:-40px;width:150px;height:150px;border-radius:50%;background:rgba(232,177,20,.22)}
+.hero h1{margin:0;font:700 24px/1.2 Georgia,serif;position:relative}.hero p{margin:6px 0 0;opacity:.92;font-size:14px;position:relative}
+.card{background:var(--card);border:1px solid var(--br);border-radius:14px;padding:14px;margin-bottom:12px}
+.card h3{margin:0 0 4px;color:var(--pri);font-size:16px}
+label{display:block;font-size:13px;color:var(--mut);margin:14px 0 4px;font-weight:700}
+input,select,textarea{width:100%;font:inherit;font-size:16px;color:inherit;background:var(--bg);border:1px solid var(--br);border-radius:9px;padding:10px}
+input[type=checkbox],input[type=radio]{width:auto}textarea{min-height:76px}
+.btn{background:var(--pri);color:var(--on);border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}.btn.g{background:var(--card);color:var(--tx);border:1px solid var(--br)}.btn.a{background:var(--gold);color:#2b2100}.btn:disabled{opacity:.5}
+.nav{display:flex;gap:8px;margin-top:14px}.nav .btn{flex:1}
+.steps{display:flex;gap:4px;margin-bottom:6px}.steps i{flex:1;height:5px;border-radius:3px;background:var(--br)}.steps i.on{background:var(--pri)}.stl{font-size:12.5px;color:var(--mut);margin-bottom:8px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}.opt{border:2px solid var(--br);background:var(--card);color:var(--tx);border-radius:12px;padding:12px;font:inherit;font-weight:700;cursor:pointer}.opt.on{border-color:var(--pri);background:var(--soft);color:var(--pri)}
+.ck{display:flex;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--br);border-radius:10px;margin-top:6px;cursor:pointer}.ck.on{border-color:var(--pri);background:var(--soft)}.ck input{width:20px;height:20px}
+.grp{font-size:12px;font-weight:700;color:var(--pri);margin:10px 0 0;text-transform:uppercase;letter-spacing:.04em}
+.rr{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--br)}.rr>div:first-child{flex:1;font-size:14.5px}
+.stars{display:flex;gap:2px}.st{background:none;border:0;font-size:30px;line-height:1;color:var(--br);padding:0 1px;cursor:pointer}.st.on{color:var(--gold)}
+.err{color:var(--red);font-size:13.5px;margin-top:10px;font-weight:600}.mut{color:var(--mut);font-size:13px}
+@media(max-width:420px){.rr{flex-direction:column;align-items:flex-start}.st{font-size:34px}}
+</style>
+<script>
+window.addEventListener("error",function(e){window.__err=(e.message||"")});
+setTimeout(function(){if(!window.__boot){var a=document.getElementById("app");if(a)a.innerHTML='<div style="padding:24px;font-family:system-ui">Halaman gagal dimuat ('+(window.__err||"tanpa detail")+'). Muat ulang halaman.</div>'}},7000);
+</script>
+</head>
+<body>
+<div class="w" id="app"><div style="padding:30px;text-align:center;color:#66756d">Memuat…</div></div>
+<script>
+window.__boot=true;
+const LOGO="data:image/png;base64,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";
+const $=s=>document.querySelector(s),E=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),CL=o=>JSON.parse(JSON.stringify(o));
+const DEFCFG={title:"Ceritakan Pengalaman Tour Anda",intro:"Terima kasih telah bertour bersama RihlahGo. Masukan Anda sangat berarti untuk meningkatkan pelayanan kami. Pengisian form ini tidak memerlukan akun.",thanks:"Terima kasih atas masukan Anda! Semoga kita berjumpa lagi di trip berikutnya. 🤲",
+ jenisP:["Al Ula","Badr","Badr+Paraglide","Yanbu+Badr","Jabal Uhud","Jabal Ayr"],jenisO:["Open Trip Terbatas - Al Ula Edition","Open Trip Terbatas - Badr Edition"],crewRate:"Penilaian untuk {nama}",
+ qs:[{s:"crew",k:"r",q:"Keramahan & pelayanan crew"},{s:"crew",k:"r",q:"Profesionalisme & ketepatan waktu crew"},{s:"crew",k:"t",q:"Tanggapan, kritik, atau saran untuk crew yang bertugas"},
+ {s:"trip",k:"r",q:"Kenyamanan kendaraan"},{s:"trip",k:"r",q:"Ketepatan jadwal & itinerary"},{s:"trip",k:"r",q:"Kualitas destinasi / pengalaman trip"},{s:"trip",k:"r",q:"Kesesuaian harga dengan pengalaman"},{s:"trip",k:"t",q:"Hal yang paling berkesan dari trip ini"},{s:"trip",k:"t",q:"Kritik atau saran untuk trip ini"},
+ {s:"rihlahgo",k:"r",q:"Kepuasan secara keseluruhan terhadap RihlahGo"},{s:"rihlahgo",k:"r",q:"Kemungkinan Anda merekomendasikan RihlahGo ke keluarga/teman"},{s:"rihlahgo",k:"t",q:"Kritik atau saran untuk RihlahGo secara umum"}]};
+const DEFCREW={guide:["Abdul Azis","Athian Rifai Faldiansyah","Yahya Ayyasy","Miftah Fauzi","Pasha Ardhena"],photo:["Faris Shafwan Haidar","Muhammad Fauzi Anas","Habib Maulana Rifky","Rofiul Izza","Aji Muhammad Rifai"],supir:["Muhammad Ardhia Rahman","Alwi Bennatar"]};
+const SEC={crew:"Tentang Crew",trip:"Tentang Trip",rihlahgo:"Tentang RihlahGo"},ROLE={guide:"Tour Guide",photo:"Photographer",supir:"Supir"};
+let CFG=CL(DEFCFG),CREW=CL(DEFCREW),FB=null,UID=null,fatal="",step=1,msg="",done=false,busy=false,ready=false;
+let D={tgl:"",tipe:"",jenis:"",crew:[],nocrew:false,ex:"none",exn:"",rate:{},txt:{},nama:"",wa:""};
+const today=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const hariOf=t=>t?new Date(t+"T00:00").toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"";
+const jenisList=()=>D.tipe==="Private Trip"?CFG.jenisP:D.tipe==="Open Trip"?CFG.jenisO:[];
+const crewList=()=>D.crew.concat(D.ex==="nama"&&D.exn.trim()?[{n:D.exn.trim(),r:"extra"}]:[]);
+const isOn=n=>D.crew.some(c=>c.n===n);
+function s1(){let h=`<label style="margin-top:0">1. Hari &amp; Tanggal Trip</label><input type="date" data-k="tgl" max="${today()}" value="${E(D.tgl)}"><div class="mut" id="hari">${E(hariOf(D.tgl))}</div>
+<label>2. Tipe Trip</label><div class="seg">${["Private Trip","Open Trip"].map(x=>`<button class="opt ${D.tipe===x?"on":""}" data-act="tipe" data-v="${x}">${x}</button>`).join("")}</div>
+<label>3. Jenis Trip</label>`+(D.tipe?`<select data-k="jenis"><option value="">— pilih jenis trip —</option>${jenisList().map(x=>`<option value="${E(x)}" ${D.jenis===x?"selected":""}>${E(x)}</option>`).join("")}</select>`:'<div class="mut">Pilih tipe trip terlebih dahulu.</div>')+`<label>4. Crew yang bertugas <span class="mut">(boleh lebih dari satu)</span></label>`;
+ for(const r of["guide","photo","supir"]){h+=`<div class="grp">${ROLE[r]}</div>`+(CREW[r]||[]).map(n=>`<label class="ck ${isOn(n)?"on":""}" style="margin:6px 0 0"><input type="checkbox" data-act="crew" data-n="${E(n)}" data-r="${r}" ${isOn(n)?"checked":""}><span>${E(n)}</span></label>`).join("")}
+ h+=`<label class="ck ${D.nocrew?"on":""}" style="margin-top:10px"><input type="checkbox" data-act="nocrew" ${D.nocrew?"checked":""}><span>Saya tidak ingat / tidak tahu crew yang bertugas</span></label>
+<label>5. Crew tambahan <span class="mut">(jika ada crew lain yang melayani Anda)</span></label>
+<label class="ck ${D.ex==="none"?"on":""}" style="margin:6px 0 0"><input type="radio" name="ex" data-act="ex" data-v="none" ${D.ex==="none"?"checked":""}><span>Tidak ada / tidak tahu</span></label>
+<label class="ck ${D.ex==="nama"?"on":""}"><input type="radio" name="ex" data-act="ex" data-v="nama" ${D.ex==="nama"?"checked":""}><span>Ketik nama crew tambahan</span></label>${D.ex==="nama"?`<input data-k="exn" placeholder="Nama crew tambahan" style="margin-top:6px" value="${E(D.exn)}">`:""}`;return h}
+const rrow=(key,q)=>`<div class="rr"><div>${E(q)}</div><div class="stars">${[1,2,3,4,5].map(v=>`<button class="st ${(D.rate[key]||0)>=v?"on":""}" data-act="rate" data-key="${E(key)}" data-v="${v}" aria-label="${v} bintang">★</button>`).join("")}</div></div>`;
+function s2(){let h="";for(const s of["crew","trip","rihlahgo"]){h+=`<div class="card"><h3>${SEC[s]}</h3>`;
+  if(s==="crew")crewList().forEach(c=>h+=rrow("c:"+c.n,CFG.crewRate.replace("{nama}",c.n)));
+  CFG.qs.forEach((q,i)=>{if(q.s===s&&q.k==="r")h+=rrow("q"+i,q.q)});
+  CFG.qs.forEach((q,i)=>{if(q.s===s&&q.k==="t")h+=`<label>${E(q.q)} <span class="mut">(opsional)</span></label><textarea data-k="txt.q${i}">${E(D.txt["q"+i]||"")}</textarea>`});h+=`</div>`}
+ return h+`<div class="card"><h3>Data kontak (opsional)</h3><div class="mut">Kosongkan jika ingin tetap anonim. Isi hanya jika Anda bersedia dihubungi.</div><label>Nama</label><input data-k="nama" value="${E(D.nama)}" autocomplete="name"><label>Nomor WhatsApp</label><input data-k="wa" type="tel" value="${E(D.wa)}"></div>`}
+function view(){if(fatal)return`<div class="card"><b>Tidak dapat terhubung</b><p class="mut">${E(fatal)}</p></div>`;
+ let h=`<div class="brand"><img src="${LOGO}" alt="RihlahGo"></div>`;
+ if(done)return h+`<div class="hero"><h1>🎉 Terima kasih!</h1><p>${E(CFG.thanks)}</p></div><div class="card"><button class="btn a" style="width:100%" data-act="again">Kirim tanggapan lain</button></div>`;
+ if(!ready)return h+'<div class="card mut">Memuat…</div>';
+ h+=`<div class="hero"><h1>${E(CFG.title)}</h1><p>${E(CFG.intro)}</p></div><div class="steps"><i class="on"></i><i class="${step===2?"on":""}"></i></div><div class="stl">Langkah ${step} dari 2 · ${step===1?"Tentang trip Anda":"Tanggapan, kritik &amp; saran"}</div>`;
+ h+=step===1?`<div class="card">${s1()}</div>`:s2();
+ return h+(msg?`<div class="err">${E(msg)}</div>`:"")+`<div class="nav">${step===2?'<button class="btn g" data-act="back">← Kembali</button>':""}${step===1?'<button class="btn" data-act="next">Lanjut →</button>':`<button class="btn a" data-act="send" ${busy?"disabled":""}>${busy?"Mengirim…":"Kirim Tanggapan"}</button>`}</div>`}
+function render(ext){const ae=document.activeElement;if(ext&&ae&&/INPUT|TEXTAREA|SELECT/.test(ae.tagName))return;$("#app").innerHTML=view()}
+function setP(o,p,v){const k=p.split(".");let a=o;for(let i=0;i<k.length-1;i++)a=a[k[i]];a[k[k.length-1]]=v}
+document.addEventListener("input",e=>{const t=e.target;if(!t.dataset.k)return;setP(D,t.dataset.k,t.value);if(t.dataset.k==="tgl"){const h=$("#hari");if(h)h.textContent=hariOf(t.value)}});
+function check1(){if(!D.tgl)return"Isi hari & tanggal trip.";if(D.tgl>today())return"Tanggal trip tidak boleh di masa depan.";if(!D.tipe)return"Pilih tipe trip.";if(!D.jenis)return"Pilih jenis trip.";
+ if(!D.crew.length&&!D.nocrew&&!(D.ex==="nama"&&D.exn.trim()))return"Pilih crew yang bertugas, atau centang “tidak tahu crew yang bertugas”.";if(D.ex==="nama"&&!D.exn.trim())return"Ketik nama crew tambahan, atau pilih “Tidak ada / tidak tahu”.";return""}
+function check2(){const miss=[];crewList().forEach(c=>{if(!D.rate["c:"+c.n])miss.push(c.n)});CFG.qs.forEach((q,i)=>{if(q.k==="r"&&!D.rate["q"+i])miss.push(q.q)});return miss.length?"Mohon beri bintang untuk semua penilaian ("+miss.length+" belum diisi).":""}
+document.addEventListener("click",async e=>{const t=e.target.closest("[data-act]");if(!t)return;const a=t.dataset.act;msg="";
+ if(a==="tipe"){if(D.tipe!==t.dataset.v){D.tipe=t.dataset.v;D.jenis=""}}
+ else if(a==="crew"){const n=t.dataset.n;if(isOn(n))D.crew=D.crew.filter(c=>c.n!==n);else{D.crew.push({n,r:t.dataset.r});D.nocrew=false}}
+ else if(a==="nocrew"){D.nocrew=t.checked;if(D.nocrew)D.crew=[]}
+ else if(a==="ex")D.ex=t.dataset.v
+ else if(a==="rate")D.rate[t.dataset.key]=+t.dataset.v
+ else if(a==="next"){const m=check1();if(m)msg=m;else{step=2;window.scrollTo(0,0)}}
+ else if(a==="back"){step=1;window.scrollTo(0,0)}
+ else if(a==="again"){D={tgl:"",tipe:"",jenis:"",crew:[],nocrew:false,ex:"none",exn:"",rate:{},txt:{},nama:"",wa:""};step=1;done=false}
+ else if(a==="send"){const m=check1()||check2();if(m){msg=m}else{busy=true;render();
+   try{const ans=[];CFG.qs.forEach((q,i)=>{if(q.k==="r")ans.push({s:q.s,q:q.q,v:D.rate["q"+i]});else if((D.txt["q"+i]||"").trim())ans.push({s:q.s,q:q.q,t:D.txt["q"+i].trim().slice(0,1500)})});
+    crewList().forEach(c=>ans.push({s:"crew",q:CFG.crewRate.replace("{nama}",c.n),v:D.rate["c:"+c.n],c:c.n}));
+    await FB.addDoc(FB.collection(FB.db,"fb_resp"),{ts:Date.now(),tgl:D.tgl,hari:hariOf(D.tgl),tipe:D.tipe,jenis:D.jenis,crew:D.crew,ex:D.ex,exn:D.ex==="nama"?D.exn.trim():"",ans,nama:D.nama.trim().slice(0,80),wa:D.wa.trim().slice(0,25),uid:UID,tindak:false});
+    done=true;window.scrollTo(0,0)}catch(x){msg="Tanggapan belum terkirim ("+(x.code||x.message)+"). Periksa koneksi lalu coba lagi."}busy=false}}
+ render()});
+const parseCfg=t=>{t=String(t);const i=t.indexOf("apiKey");if(i<0)throw Error("apiKey tidak ditemukan");const a=t.lastIndexOf("{",i),b=t.indexOf("}",i);if(a<0||b<0)throw Error("format tidak dikenali");const c=new Function("return ("+t.slice(a,b+1)+")")();if(!c.apiKey||!c.projectId)throw Error("apiKey/projectId kosong");return c};
+async function getCfg(){try{const c=parseCfg(await(await fetch("config.js?v="+Date.now(),{cache:"no-store"})).text());if(!/ISI_/.test(c.apiKey+c.projectId))return c}catch(e){}try{const t=localStorage.getItem("rg_cfg");if(t)return JSON.parse(t)}catch(e){}return null}
+async function boot(){
+ const cfg=await getCfg();
+ if(!cfg){if(location.hash==="#/setup"){$("#app").innerHTML='<div class="card"><b>Konfigurasi Firebase</b><label>Tempel isi firebaseConfig</label><textarea id="cfgTxt"></textarea><button class="btn a" id="cfgSave" style="margin-top:8px">Simpan</button></div>';$("#cfgSave").onclick=()=>{try{localStorage.setItem("rg_cfg",JSON.stringify(parseCfg($("#cfgTxt").value)));location.href=location.pathname}catch(e){alert("Tidak valid: "+e.message)}}}else{fatal="Situs belum dikonfigurasi. Hubungi admin RihlahGo.";render()}return}
+ try{const B="https://www.gstatic.com/firebasejs/10.14.1/",[A,Au,F]=await Promise.all([import(B+"firebase-app.js"),import(B+"firebase-auth.js"),import(B+"firebase-firestore.js")]);const app=A.initializeApp(cfg);FB={...Au,...F,auth:Au.getAuth(app),db:F.getFirestore(app)}}catch(e){fatal="Gagal memuat Firebase: "+e.message;render();return}
+ FB.onAuthStateChanged(FB.auth,async u=>{if(!u){try{await FB.signInAnonymously(FB.auth)}catch(e){fatal="Login anonim belum diaktifkan di Firebase (Authentication → Sign-in method → Anonymous).";render()}return}
+  if(UID)return;UID=u.uid;
+  FB.onSnapshot(FB.doc(FB.db,"fb_cfg","main"),s=>{CFG={...CL(DEFCFG),...(s.exists()?s.data():{})};ready=true;render(true)},()=>{ready=true;render(true)});
+  FB.onSnapshot(FB.doc(FB.db,"catalog","petugas"),s=>{if(s.exists()){const d=s.data();CREW={guide:(d.guide||[]).map(x=>x.n).filter(Boolean),photo:(d.photo||[]).map(x=>x.n).filter(Boolean),supir:(d.supir||[]).map(x=>x.n).filter(Boolean)}}render(true)},()=>{})})}
+boot();render();
+</script>
+</body>
+</html>
