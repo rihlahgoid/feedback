@@ -1,10 +1,10 @@
-// SALIN isi config.js dari website Dashboard Official Anda (proyek Firebase yang SAMA).
-// Atau ganti nilai ISI_... dengan konfigurasi dari Firebase Console (Project settings > Your apps > Web app).
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "ISI_API_KEY",
-  authDomain: "ISI_PROJECT_ID.firebaseapp.com",
-  projectId: "ISI_PROJECT_ID",
-  storageBucket: "ISI_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "ISI_SENDER_ID",
-  appId: "ISI_APP_ID"
+  apiKey: "AIzaSyA7uTcJXxBo5bThpfwDOdwo0zD7fr-7YP0",
+  authDomain: "schedule-rihlahgo-e6608.firebaseapp.com",
+  projectId: "schedule-rihlahgo-e6608",
+  storageBucket: "schedule-rihlahgo-e6608.firebasestorage.app",
+  messagingSenderId: "1086127565127",
+  appId: "1:1086127565127:web:d74b718c9ed8bdd484c462",
+  measurementId: "G-HG7JLNVE7X"
 };
